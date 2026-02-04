@@ -1,0 +1,12 @@
+{
+    "alloworigin":[
+      "$[env:SAML_IDP_ORIGIN;default=https://dev-09898365.okta.com]",
+	  "null"
+    ],
+    "allowedpaths": [
+      ".*/saml_login"
+    ],
+    "supportedmethods":[
+      "POST"
+    ]
+}

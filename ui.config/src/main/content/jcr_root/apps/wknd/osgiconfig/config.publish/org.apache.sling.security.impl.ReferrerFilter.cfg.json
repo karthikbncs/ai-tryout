@@ -1,0 +1,15 @@
+{
+    "allow.hosts.regexp":[
+      ""
+    ],
+    "allow.hosts":[
+      "$[env:SAML_IDP_REFERRER;default=dev-09898365.okta.com]"
+    ],
+    "filter.methods":[
+      "POST"
+    ],
+    "exclude.agents.regexp":[
+      ""
+    ],
+    "allow.empty":true
+}

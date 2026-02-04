@@ -1,0 +1,21 @@
+{
+    "path": [ "/content/wknd/us/en/adventures" ],
+    "idpCertAlias": "$[env:SAML_IDP_CERT_ALIAS;default=certalias___1713999018110]",
+    "idpIdentifier": "$[env:SAML_IDP_ID;default=http://www.okta.com/exkgo1njwl2MPGSXO5d7]",
+    "idpUrl": "$[env:SAML_IDP_URL;default=https://dev-09898365.okta.com/app/dev-09898365_testapp_1/exkgo1njwl2MPGSXO5d7/sso/saml]",
+    "serviceProviderEntityId": "$[env:SAML_AEM_ID;default=http://localhost:4503]",
+    "useEncryption": false,
+    "createUser": true,
+	"storeSAMLResponse": true,
+	"userIDAttribute": "uid",
+    "userIntermediatePath": "zeiss/okta",
+    "synchronizeAttributes":[
+        "firstName=profile/givenName",
+		"lastName=profile/familyName",
+		"uid=profile/email"
+    ],
+    "addGroupMemberships": true,
+    "defaultGroups": [
+        "everyone"
+    ]
+}
